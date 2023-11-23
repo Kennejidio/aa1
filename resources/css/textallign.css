@@ -1,0 +1,17 @@
+.text-center-alt {
+    text-align: left;
+  }
+
+.dashmargin{
+    margin-top: 1in;
+    margin-bottom: 1in;
+}
+
+@media screen and (max-width: 600px) {
+    .text-center-alt {
+    text-align: center;
+    }
+    .dashmargin{
+        margin-top: 20px;
+    }
+  }

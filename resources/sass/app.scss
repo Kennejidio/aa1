@@ -1,0 +1,337 @@
+// ? FOR WELCOME PAGES AND LOGIN
+:root {
+    --aa-textheader-primary: #FF74D9;
+    --aa-text-primary: rgb(51, 0, 38);
+    --aa-text-secondary: rgb(255, 255, 255);
+    --aa-bg-primary: rgb(255, 26, 140);
+    --aa-bg-secondary: rgb(255, 255, 255);
+    --aa-text-default: rgb(0, 0, 0);
+  }
+
+  /* Button and Text Css Starts Here */
+
+  .text-color {
+    font-weight: bold;
+    color: var(--aa-text-primary);
+  }
+
+  .link-color {
+  text-decoration: none;
+  font-size: 13px;
+  color: var(--aa-text-primary);
+  }
+
+  .button-pink {
+  background-color: var(--aa-bg-primary);
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  color: var(--aa-text-secondary);
+  font-size: 16px;
+  font-weight: bold;
+  transition-duration: 0.4s;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  }
+
+  .button-pink:hover {
+  background-color: var(--aa-bg-secondary);
+  color: var(--aa-text-primary);
+  border: 2px solid var(--aa-bg-primary);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  }
+
+  /* Button and Text Css Ends Here */
+
+  /* Form Css Designs Starts Here */
+
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  }
+  .aaimage {
+  height: 150px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  // background-image: url("../../images/aa-bg.png");
+  }
+  .image-overlay {
+  height: 150px;
+  width: 100%;
+  background-color: rgb(255, 0, 255, 0.5);
+  }
+
+  .aalogo {
+  height: 65px;
+  width: 65px;
+  }
+
+  /* Form Css Designs Ends Here */
+
+  // ? WELCOME PAGE
+  /* Header Starts Here */
+
+  .aa-header {
+    font-weight: bolder;
+    color: var(--aa-textheader-primary);
+    // font-family: 'Impact', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .logo {
+    position: relative;
+    bottom: 10px;
+  }
+
+  /* Header Ends Here */
+
+  .aa-text {
+    font-weight: bolder;
+    text-shadow: 0 0 4px var(--aa-text-secondary);
+    color: var(--aa-text-primary);
+  }
+
+  .text-color {
+    font-weight: bold;
+    color: var(--aa-text-primary);
+  }
+
+  /* Color and Text Css Ends Here */
+
+  /* Navigation Css Starts Here */
+  .card-design {
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    background: #008120;
+    margin-bottom: 15px;
+  }
+  .card-design.bg-alt {
+    background: #fd0202;
+  }
+
+  .button-size{
+    height: 50px;
+    width: 70px;
+  }
+
+  /* Navigation Css Ends Here */
+
+  /* Background Css Starts Here*/
+
+  .bg-image {
+    background: no-repeat center center;
+    background-size: cover;
+    color: white;
+  }
+
+  .color-overlay {
+    min-height: 90vh;
+    background-color: rgb(255, 255, 255, 0.6);
+  }
+  @media (max-width: 767.98) {
+    .color-overlay {
+      min-height: 30vh;
+    }
+  }
+
+  /* Background Css Ends Here */
+
+
+  // ? For Centering texts and dashboard with responsiveness
+  .text-center-alt {
+    text-align: left !important;
+  }
+  .report-margin-center{
+    margin-top: 0.8in !important;
+    margin-bottom: 1in !important;
+  }
+  .register-margin-top{
+    margin-top: 1.6in !important;
+  }
+  @media screen and (max-width: 600px) {
+    .text-center-alt {
+        text-align: center !important;
+    }
+    .report-margin-center{
+    margin-top: 0.5in !important;
+    margin-bottom: 0.5in !important;
+  }
+  }
+  // ------------------------------BOOTSTRAP-------------------------------//
+  // import scss functions and variables from modules of bootstrap
+
+  @import "bootstrap/scss/functions";
+  @import "bootstrap/scss/variables";
+
+  // Generating bg and text color for all base Colors
+  @each $color, $value in $colors {
+    .bg-#{$color}{
+          background-color: $value !important;
+    }
+
+    .text-#{$color}{
+      color: $value !important;
+    }
+  }
+
+  //Generating All Shades of Gray
+  @each $key, $value in $grays {
+    .bg-gray-#{$key}{
+          background-color: $value !important;
+    }
+
+    .text-gray-#{$key}{
+      color: $value !important;
+    }
+  }
+
+  //Generating All Shades of Blue
+  @each $key, $value in $blues {
+      .bg-#{$key}{
+            background-color: $value !important;
+      }
+
+      .text-#{$key}{
+        color: $value !important;
+      }
+    }
+
+  //Generating All Shades of Indigos
+  @each $key, $value in $indigos {
+      .bg-#{$key}{
+            background-color: $value !important;
+      }
+
+      .text-#{$key}{
+        color: $value !important;
+      }
+    }
+
+  //Generating All Shades of Purple
+  @each $key, $value in $purples {
+      .bg-#{$key}{
+            background-color: $value !important;
+      }
+
+      .text-#{$key}{
+        color: $value !important;
+      }
+    }
+
+  //Generating All Shades of Pink
+  @each $key, $value in $pinks {
+      .bg-#{$key}{
+            background-color: $value !important;
+      }
+
+      .text-#{$key}{
+        color: $value !important;
+      }
+    }
+
+  //Generating All Shades of Red
+  @each $key, $value in $reds {
+      .bg-#{$key}{
+            background-color: $value !important;
+      }
+
+      .text-#{$key}{
+        color: $value !important;
+      }
+    }
+
+  //Generating All Shades of Orange
+  @each $key, $value in $oranges {
+      .bg-#{$key}{
+            background-color: $value !important;
+      }
+
+      .text-#{$key}{
+        color: $value !important;
+      }
+    }
+
+  //Generating All Shades of Yellow
+  @each $key, $value in $yellows {
+      .bg-#{$key}{
+            background-color: $value !important;
+      }
+
+      .text-#{$key}{
+        color: $value !important;
+      }
+    }
+
+  //Generating All Shades of Green
+  @each $key, $value in $greens {
+      .bg-#{$key}{
+            background-color: $value !important;
+      }
+
+      .text-#{$key}{
+        color: $value !important;
+      }
+    }
+
+  //Generating All Shades of Teal
+  @each $key, $value in $teals {
+      .bg-#{$key}{
+            background-color: $value !important;
+      }
+
+      .text-#{$key}{
+        color: $value !important;
+      }
+    }
+
+  //Generating All Shades of Cyan
+  @each $key, $value in $cyans {
+      .bg-#{$key}{
+            background-color: $value !important;
+      }
+
+      .text-#{$key}{
+        color: $value !important;
+      }
+    }
+
+
+
+  // add new variables with customized colors in theme colors
+  $var-theme-colors: (
+      "blue": blue,
+      "blue1": #2C3F50,
+      "blue2": #00005C,
+      "green": green,
+      "green1": #309054,
+      "red": rgb(226, 0, 0),
+      "red1": #B00020,
+      "maroon": maroon,
+      "violet": #93329E,
+      "darkpink": rgb(192, 15, 44),
+      "lightpink": #D8605F,
+      "yellow": yellow,
+      "yellow1": #F9AC2F,
+  );
+
+  // merge the added new variables into theme colors
+  $theme-colors: map-merge($var-theme-colors, $theme-colors);
+
+  // import scss bootstrap from modules of bootstrap
+  @import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+
+
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';

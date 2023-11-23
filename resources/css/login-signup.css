@@ -1,0 +1,73 @@
+
+  /* :root {
+    --aa-textheader-primary: rgb(230, 0, 115);
+    --aa-text-primary: rgb(51, 0, 38);
+    --aa-text-secondary: rgb(255, 255, 255);
+    --aa-bg-primary: rgb(255, 26, 140);
+    --aa-bg-secondary: rgb(255, 255, 255);
+    --aa-text-default: rgb(0, 0, 0);
+  } */
+
+/* Button and Text Css Starts Here */
+
+.text-color {
+    font-weight: bold;
+    color: var(--aa-text-primary);
+  }
+
+.link-color {
+  text-decoration: none;
+  font-size: 13px;
+  color: var(--aa-text-primary);
+}
+
+.button-pink {
+  background-color: var(--aa-bg-primary);
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  color: var(--aa-text-secondary);
+  font-size: 16px;
+  font-weight: bold;
+  transition-duration: 0.4s;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.button-pink:hover {
+  background-color: var(--aa-bg-secondary);
+  color: var(--aa-text-primary);
+  border: 2px solid var(--aa-bg-primary);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* Button and Text Css Ends Here */
+
+/* Form Css Designs Starts Here */
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.aaimage {
+  height: 150px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  /* background-image: url("{{ URL::asset('images/aa-bg.png }}"); */
+}
+.image-overlay {
+  height: 150px;
+  width: 100%;
+  background-color: rgb(255, 0, 255, 0.5);
+}
+
+.aalogo {
+  height: 65px;
+  width: 65px;
+}
+
+/* Form Css Designs Ends Here */

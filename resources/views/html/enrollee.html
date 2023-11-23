@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>enrollee</title>
+
+        <link rel="stylesheet"
+            href="../../../public/build/assets/app-ff481f0e.css">
+        <script
+            src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <!-- //* Logo and Title -->
+            <div class="container-fluid pt-3 bg-dark text-center">
+                <img src="{{ asset('images/aa-icon.png') }}" alt="School Logo"
+                    class="logo" height="40"
+                    width="40" />
+                <span class="aa-header h1 fw-bolder">ABUYOG ACADEMY INC.</span>
+            </div>
+        </header>
+
+        <section class="container-fluid mt-2 mb-5">
+            <form>
+                <!-- * Top Buttons -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="bg-white shadow mt-4 p-3">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h4 class="fw-bolder text-bg-dark
+                                        text-center">ENROLLMENT</h4>
+                                </div>
+                                <div class="col-md-3 text-center">
+                                    <div class="btn-group" role="group"
+                                        aria-label="Basic
+                                        example">
+                                        <button type="button" class="btn
+                                            btn-green">SAVE</button>
+                                        <button type="button" class="btn
+                                            btn-red">CANCEL</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- * STUDENT INFORMATION -->
+
+                <div class="row">
+                    <!-- * STUDENT INFO -->
+                    <div class="col-md-8">
+                        <div class="bg-white shadow mt-4 p-3">
+                            <div class="text-center">
+                                <h4 class="fw-bolder text-bg-green">STATUS</h4>
+                            </div>
+                            <div class="row justify-content-md-center p-3">
+                                <div class="col-md-3">
+                                    <span class="fw-bolder">Status</span>
+                                    <select class="form-select form-select-sm">
+                                        <option value="">PENDING</option>
+                                        <option value="">ENROLL</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="fw-bolder">School Year Enrolled</span>
+                                    <input class="form-control form-control-sm"
+                                        type="text" disabled>
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="fw-bolder">Grade Enrolled</span>
+                                    <select class="form-select form-select-sm">
+                                        <option value="">Choose</option>
+                                        <option value="">Grade 7</option>
+                                        <option value="">Grade 8</option>
+                                        <option value="">Grade 9</option>
+                                        <option value="">Grade 10</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="fw-bolder">Section</span>
+                                    <select class="form-select form-select-sm">
+                                        <option value="">Choose</option>
+                                        <option value="">Section 1</option>
+                                        <option value="">Section 2</option>
+                                        <option value="">Section 3</option>
+                                        <option value="">Section 4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <h4 class="fw-bolder text-bg-green">PERSONAL
+                                    DETAILS</h4>
+                            </div>
+                            <div class="row justify-content-md-center p-3">
+                                <div class="col-md-3">
+                                    <span class="fw-bolder">LRN</span>
+                                    <input class="form-control form-control-sm"
+                                        type="text">
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="fw-bolder">First Name</span>
+                                    <input class="form-control form-control-sm"
+                                        type="text">
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="fw-bolder">Middle Name</span>
+                                    <input class="form-control form-control-sm"
+                                        type="text">
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="fw-bolder">Last Name</span>
+                                    <input class="form-control form-control-sm"
+                                        type="text">
+                                </div>
+                            </div>
+                            <div class="row justify-content-md-center p-3">
+                                <div class="col-md-3">
+                                    <span class="fw-bolder">Extension Name</span>
+                                    <input class="form-control form-control-sm"
+                                        type="text">
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="fw-bolder">Sex</span>
+                                    <input class="form-control form-control-sm"
+                                        type="text">
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="fw-bolder">Birth Date</span>
+                                    <input class="form-control form-control-sm"
+                                        type="text">
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="fw-bolder">Age</span>
+                                    <input class="form-control form-control-sm"
+                                        type="text">
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <h4 class="fw-bolder text-bg-green">ADDRESS
+                                    DETAILS</h4>
+                            </div>
+                            <div class="row justify-content-md-center p-3">
+                                <div class="col-md-3">
+                                    <span class="fw-bolder">Barangay</span>
+                                    <input class="form-control form-control-sm"
+                                        type="text">
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="fw-bolder">Municipal/City</span>
+                                    <input class="form-control form-control-sm"
+                                        type="text">
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="fw-bolder">Province/Region</span>
+                                    <input class="form-control form-control-sm"
+                                        type="text">
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="fw-bolder">Zip</span>
+                                    <input class="form-control form-control-sm"
+                                        type="text">
+                                </div>
+                            </div>
+                            <div class="row justify-content-md-start p-3">
+                                <div class="col-md-3">
+                                    <span class="fw-bolder">Contact Number</span>
+                                    <input class="form-control form-control-sm"
+                                        type="text">
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="fw-bolder"></span>
+                                    <input class="form-control form-control-sm"
+                                        type="hidden">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- * Panel 2 -->
+                    <div class="col-md-4">
+                        <div class="bg-white shadow mt-4 p-3">
+                            <div class="text-center">
+                                <h4 class="fw-bolder text-bg-green">PARENTS /
+                                    GUADIAN</h4>
+                            </div>
+                            <div class="row justify-content-md-center p-3">
+                                <div class="col-md-8">
+                                    <span class="fw-bolder">Mother</span>
+                                    <input class="form-control form-control-sm"
+                                        type="text">
+                                </div>
+                            </div>
+                            <div class="row justify-content-md-center p-3">
+                                <div class="col-md-8">
+                                    <span class="fw-bolder">Father</span>
+                                    <input class="form-control form-control-sm"
+                                        type="text">
+                                </div>
+                            </div>
+                            <div class="row justify-content-md-center p-3">
+                                <div class="col-md-8">
+                                    <span class="fw-bolder">Guardian</span>
+                                    <input class="form-control form-control-sm"
+                                        type="text">
+                                </div>
+                            </div>
+                            <div class="row justify-content-md-center p-3">
+                                <div class="col-md-8">
+                                    <span class="fw-bolder">Contact number in
+                                        case
+                                        of Emergency</span>
+                                    <input class="form-control form-control-sm"
+                                        type="text">
+                                </div>
+                            </div>
+                            <div class="row justify-content-md-center p-3">
+                                <div class="col-md-8">
+                                    <span class="fw-bolder"></span>
+                                    <input class="form-control form-control-sm"
+                                        type="hidden">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- * Panel 3 -->
+                    <div class="col-md-4">
+                        <div class="bg-white shadow mt-4 p-3">
+                            <div class="text-center">
+                                <h5 class="fw-bolder text-bg-green">EDUCATIONAL
+                                    BACKGROUND</h5>
+                            </div>
+                            <div class="row justify-content-md-center p-3">
+                                <div class="col-md-8">
+                                    <span class="fw-bolder">Last Elementary
+                                        school
+                                        Graduated</span>
+                                    <input class="form-control form-control-sm"
+                                        type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="bg-white shadow mt-4 p-3">
+                            <div class="text-center">
+                                <h5 class="fw-bolder text-bg-green">RETURNEE /
+                                    TRANSFEREE</h5>
+                            </div>
+                            <div class="row justify-content-md-center p-3">
+                                <div class="col-md-3">
+                                    <span class="fw-bolder">Grade Level
+                                        Completed</span>
+                                    <input class="form-control form-control-sm"
+                                        type="text">
+                                </div>
+                                <div class="col-md-2">
+                                    <span class="fw-bolder">Last School Year</span>
+                                    <input class="form-control form-control-sm"
+                                        type="text">
+                                </div>
+                                <div class="col-md-2">
+                                    <span class="fw-bolder">School Name</span>
+                                    <input class="form-control form-control-sm"
+                                        type="text">
+                                </div>
+                                <div class="col-md-2">
+                                    <span class="fw-bolder">School Address</span>
+                                    <input class="form-control form-control-sm"
+                                        type="text">
+                                </div>
+                                <div class="col-md-2">
+                                    <span class="fw-bolder">School ID</span>
+                                    <input class="form-control form-control-sm"
+                                        type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <!-- //* Footer Here -->
+        <footer class="container-fluid p-3 bg-dark text-center">
+            <span class="text-light">Copyright &#169; 2023, Abuyog Academy</span>
+        </footer>
+        <!-- //* Footer Ends -->
+    </body>
+</html>

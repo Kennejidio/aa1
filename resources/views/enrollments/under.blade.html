@@ -1,0 +1,13 @@
+@extends('layouts.app')
+@section('content')
+    <section class="container-fluid">
+        <!-- * Title -->
+        <div class="row">
+            <div class="col-md-7 text-center-alt">
+                <h3><b>ENROLLEES</b></h3>
+                <h4 class="text-gray-500"><b>LIST</b></h4>
+            </div>
+        </div>
+    </section>
+    role="button" onclick="window.location='{{route('enrollments.edit')}}'"
+@endsection

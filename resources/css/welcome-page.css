@@ -1,0 +1,78 @@
+
+  /* Color And Text Css Starts Here */
+
+  :root {
+    --aa-textheader-primary: rgb(230, 0, 115);
+    --aa-text-primary: rgb(51, 0, 38);
+    --aa-text-secondary: rgb(255, 255, 255);
+    --aa-bg-primary: rgb(255, 26, 140);
+    --aa-bg-secondary: rgb(255, 255, 255);
+    --aa-text-default: rgb(0, 0, 0);
+  }
+
+  /* Header Starts Here */
+
+  .aa-header {
+    font-weight: bolder;
+    color: var(--aa-textheader-primary);
+    font-family: 'Impact', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .logo {
+    position: relative;
+    bottom: 10px;
+  }
+
+  /* Header Ends Here */
+
+  .aa-text {
+    font-weight: bolder;
+    text-shadow: 0 0 4px var(--aa-text-secondary);
+    color: var(--aa-text-primary);
+  }
+
+  .text-color {
+    font-weight: bold;
+    color: var(--aa-text-primary);
+  }
+
+  /* Color and Text Css Ends Here */
+
+  /* Navigation Css Starts Here */
+  .card-design {
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    background: #008120;
+    margin-bottom: 15px;
+  }
+  .card-design.bg-alt {
+    background: #fd0202;
+  }
+
+  .button-size{
+    height: 50px;
+    width: 70px;
+  }
+
+  /* Navigation Css Ends Here */
+
+  /* Background Css Starts Here*/
+
+  .bg-image {
+    background: no-repeat center center;
+    background-size: cover;
+    color: white;
+  }
+
+  .color-overlay {
+    min-height: 90vh;
+    background-color: rgb(255, 255, 255, 0.6);
+  }
+  @media (max-width: 767.98) {
+    .color-overlay {
+      min-height: 30vh;
+    }
+  }
+
+  /* Background Css Ends Here */
